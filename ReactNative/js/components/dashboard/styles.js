@@ -1,12 +1,18 @@
 const styles = {
   containerStyle: {
-    backgroundColor: "#dbffd3"
+    backgroundColor: "#dbffd3",
+    flex: 1
   },
+  bigIconStyle: { color: "gold" },
   iconStyle: { color: "#fff" },
   iconTextStyle: { color: "#fff" },
   productListStyle: {
     alignItems: "center",
-    margin: 15
+    marginHorizontal: 5,
+    padding: 15
+  },
+  productButtonStyle: {
+    marginVertical: 10
   }
 };
 

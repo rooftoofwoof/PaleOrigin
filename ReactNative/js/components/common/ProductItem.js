@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground } from "react-native";
+import { View, Text, ImageBackground, Button } from "react-native";
 
 export default class ProductItem extends Component {
   render() {
     const { viewStyle, imgStyle, prodNameStyle } = styles;
-    const { img_url } = this.props;
+    const { img_url, prodName } = this.props;
 
     return (
       <View style={viewStyle}>
         <ImageBackground style={imgStyle} source={{ uri: img_url }}>
-          <Text style={prodNameStyle}>{this.props.prodName}</Text>
+          <Text style={prodNameStyle}>{prodName}</Text>
         </ImageBackground>
       </View>
     );
@@ -19,8 +19,8 @@ export default class ProductItem extends Component {
 const styles = {
   prodNameStyle: {
     fontSize: 44,
-    weight: "900",
-    lineHeight: 48,
+    fontWeight: "700",
+    lineHeight: 44,
     color: "#fff"
   },
   imgStyle: {
@@ -37,6 +37,7 @@ const styles = {
     borderColor: "#843a3e",
     backgroundColor: "#ffde75",
     borderWidth: 5,
-    shadowOpacity: 0.1
+    shadowOpacity: 0.1,
+    marginVertical: 15
   }
 };

@@ -15,7 +15,7 @@ export default class CustomHeader extends Component {
       <Header style={headerStyle}>
         {this.props.children ? (this.props.children.length > 0 ? this.props.children[0] : null) : null}
         <Body>
-          <Title style={titleStyle}>PaleOrigin</Title>
+          <Title style={titleStyle}>{this.props.headerText}</Title>
         </Body>
         {this.props.children ? (this.props.children.length >= 2 ? this.props.children[1] : null) : null}
       </Header>
