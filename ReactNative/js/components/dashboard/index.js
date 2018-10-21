@@ -31,7 +31,7 @@ class Dashboard extends Component {
     if (this.state.exportOrAppend === 1) {
       return this.props.navigation.navigate("ExportQR", { qr_code: code });
     } else if (this.state.exportOrAppend === 2) {
-      return null;
+      return this.props.navigation.navigate("AppendQR");
     } else {
       return null;
     }
@@ -51,7 +51,7 @@ class Dashboard extends Component {
     const { productListStyle, containerStyle, bigIconStyle, iconStyle, iconTextStyle } = styles;
     return (
       <Container style={containerStyle}>
-        <CustomHeader headerText={"PaleOrigin"}>
+        <CustomHeader headerText={"PaleOrigin"} subtitleText={"Farmer"}>
           <Left>
             <Button
               iconLeft
