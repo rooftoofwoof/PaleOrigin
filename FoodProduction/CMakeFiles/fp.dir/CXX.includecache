@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/Batch.cpp
+Batch.h
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/Batch.h
+
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/Batch.h
+ProductType.h
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/ProductType.h
+string
+-
+vector
+-
+
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/ProductType.h
+
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/main.cpp
+iostream
+-
+Batch.h
+/home/unroot/selfprog/hfa18/PaleOrigin/FoodProduction/Batch.h
+

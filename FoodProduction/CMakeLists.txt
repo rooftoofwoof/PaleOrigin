@@ -12,7 +12,5 @@ add_executable(fp
 	ProductType.h
 	Batch.h
 	Batch.cpp
-	Product.h
-	Product.cpp
 	
 )
