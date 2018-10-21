@@ -2,14 +2,8 @@ import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
 
 export default class ProductItem extends Component {
-  constructor(props) {
-    super(props);
-    console.log("THIS IS PROPS: ", this.props);
-  }
-
   render() {
     const { viewStyle, imgStyle, prodNameStyle } = styles;
-    console.log("THIS IS CHILDREN", this.props.children);
     const { img_url } = this.props;
 
     return (

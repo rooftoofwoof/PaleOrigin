@@ -3,29 +3,27 @@ import { View, Text } from "react-native";
 import { Icon, Button, Header, Body, Right, Left, Title, Container } from "native-base";
 import styles from "./styles";
 import ProductItem from "../common/ProductItem";
+import CustomHeader from "../common/CustomHeader";
 
 class Dashboard extends Component {
   render() {
     const { productListStyle, containerStyle, headerStyle, iconStyle, iconTextStyle, titleStyle } = styles;
     return (
       <Container style={containerStyle}>
-        <Header style={headerStyle}>
+        <CustomHeader>
           <Left>
-            <Button iconLeft transparent rounded>
+            <Button iconLeft transparent rounded onPress={() => this.props.navigation.navigate("ExportQR")}>
               <Icon style={iconStyle} name="beer" />
               <Text style={iconTextStyle}> Export</Text>
             </Button>
           </Left>
-          <Body>
-            <Title style={titleStyle}>PaleOrigin</Title>
-          </Body>
           <Right>
             <Button iconLeft transparent rounded>
               <Icon style={iconStyle} name="beer" />
               <Text style={iconTextStyle}> Append</Text>
             </Button>
           </Right>
-        </Header>
+        </CustomHeader>
         <View style={productListStyle}>
           <ProductItem
             prodName="SPINACH"
